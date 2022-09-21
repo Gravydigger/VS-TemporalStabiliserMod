@@ -5,16 +5,16 @@ using Vintagestory.API.MathTools;
 
 namespace TemporalStabiliser
 {
-    public class TemporalStabiliserMod : ModSystem
+    public class TemporalStabiliserBE : ModSystem
     {
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
-            api.RegisterBlockEntityClass("temporalstabiliser", typeof(TemporalStabiliserBlock));
+            api.RegisterBlockEntityClass("temporalstabiliser", typeof(BlockEntityTemporalStabiliser));
         }
     }
 
-    public class TemporalStabiliserBlock : BlockEntity
+    public class BlockEntityTemporalStabiliser : BlockEntity
     {
         const int radius = 8;
         BlockPos[] affectedArea = new BlockPos[] { new BlockPos(0, 0, 0), new BlockPos(0, 0, 0) };

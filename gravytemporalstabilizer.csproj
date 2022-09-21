@@ -73,11 +73,14 @@
   <ItemGroup>
     <None Include="assets\gravytemporalstabiliser\blocktypes\temporalstabiliser.json" />
     <None Include="assets\gravytemporalstabiliser\lang\en.json" />
+    <None Include="assets\gravytemporalstabiliser\shapes\block\temporalstabiliser.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\BlockTemporalStabiliser.cs" />
+    <Compile Include="src\InventoryTemporalStabiliser.cs" />
     <Compile Include="src\temporalPatch.cs" />
     <Compile Include="src\harmonyPatcher.cs" />
-    <Compile Include="src\temporalStabiliser.cs" />
+    <Compile Include="src\BETemporalStabiliser.cs" />
     <Compile Include="src\GuiDialogBlockEntityTemporalStabiliser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

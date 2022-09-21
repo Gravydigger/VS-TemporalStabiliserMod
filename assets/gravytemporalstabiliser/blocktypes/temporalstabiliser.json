@@ -1,11 +1,16 @@
 {
   "code": "temporalstabiliser",
   "entityclass": "temporalstabiliser",
+  "class": "temporalstabiliser",
   "creativeinventory": { "general": [ "*" ] },
   "blockmaterial": "Stone",
-  "drawtype": "Cube",
-  "textures": {
-    "all": { "base": "block/temporalstabiliser" }
+  "drawtype": "json",
+  "shape": { "base": "block/temporalStabiliser" },
+  "sidesolid": {
+    "all": "false"
+  },
+  "sideopaque": {
+    "all": "false"
   },
   "resistance": 3.5,
   "sounds": {
