@@ -1,15 +1,14 @@
 ﻿using Vintagestory.API.Common;
 using HarmonyLib;
 
-namespace Gravy.TemporalStabiliser
+namespace TemporalStabiliser
 {
-
     [HarmonyPatch(typeof(Vintagestory.GameContent.SystemTemporalStability), "GetTemporalStability", new[] { typeof(double), typeof(double), typeof(double) })]
     public static class SystemTemporalStabilityPatch
     {
-        static void Postfix(double x, double y, double z, ref float __result, ICoreAPI ___api)
+        public static void Postfix(double x, double y, double z, ref float __result, ICoreAPI ___api)
         {
-            // your code here
+            if (y < 50) __result = 0.0f;
         }
     }
 }
