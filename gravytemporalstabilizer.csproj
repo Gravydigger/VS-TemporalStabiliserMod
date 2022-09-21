@@ -78,6 +78,7 @@
     <Compile Include="src\temporalPatch.cs" />
     <Compile Include="src\harmonyPatcher.cs" />
     <Compile Include="src\temporalStabiliser.cs" />
+    <Compile Include="src\GuiDialogBlockEntityTemporalStabiliser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

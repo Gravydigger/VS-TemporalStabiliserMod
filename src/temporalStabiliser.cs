@@ -18,6 +18,8 @@ namespace TemporalStabiliser
     {
         const int radius = 8;
         BlockPos[] affectedArea = new BlockPos[] { new BlockPos(0, 0, 0), new BlockPos(0, 0, 0) };
+        GuiDialogBlockEntityTemporalStabiliser clientDialog;
+        InventoryBase inventory;
 
         public override void OnBlockPlaced(ItemStack byItemStack = null)
         {
@@ -45,6 +47,13 @@ namespace TemporalStabiliser
 
             //Api.Logger.Debug("local stability: " + temporalStabilitySys.GetTemporalStability(Pos));
         }
+
+        //internal void OnPlayerInteract(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
+        //{
+        //    clientDialog = new GuiDialogBlockEntityTemporalStabiliser("Temporal Stabiliser", );
+        //    clientDialog.TryOpen();
+        //    clientDialog.OnClosed += () => clientDialog = null;
+        //}
 
     }
 }
